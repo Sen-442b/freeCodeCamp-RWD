@@ -1,0 +1,16 @@
+*{
+box-sizing:border-box;
+}
+h1{
+  font-size: 500%;
+}
+body{
+  text-align: center;
+  font-family: helvetica
+}
+img{
+max-width: 500%;
+display: block;
+margin: auto;
+  border-radius: 5%;
+}
