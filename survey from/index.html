@@ -1,0 +1,64 @@
+<!Doctype html> 
+<html lang="en">
+   <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A description of the page and its contents"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title> Planets Survey Form</title>
+    </head>
+  <body>
+
+<h1 id ="title"> Planets Survey Form </h1>
+<p id = "description">Let's see how much you know about planets<p>
+<!--     <div>.</div> -->
+<form id="survey-form">
+  <label for="fname" id="name-label">Enter Your Name</label><br>
+  <input type = "text" id="name" placeholder="Enter Your Name" required><br>
+  <label for="mail" id="email-label">Enter Your Email</label><br>
+    <input type = "email" id="email"placeholder="Enter Your Email" required><br>
+    <label for="number" id="number-label">Enter the number of known planets in the solar system </label><br>
+  <input type="number" id ="number"  min ="1" max= "20" placeholder="Enter Your Number" required> <br>
+  
+   <label for="dropdown">Which planet has the deadliest atmosphere for any living being?</label>
+  <br>
+        <select id="dropdown" form="survey-form">
+          <option value="" disabled selected>select an option</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="venus">Venus</option>
+          <option value="mercury">Mercury</option>
+          <option value="earth">Earth</option>
+          <option value="saturn">Saturn</option>
+        </select>
+  <br>
+  <label for ="query"> Which planet saves our planet earth from asteroids? </label>
+   <br>  
+  <input type= "radio"  id="mars" name="query" value="mars"> 
+  <label for = "mars"> Mars</label>
+  
+  <input type= "radio"  id="jupiter" name="query" value="jupiter" >  
+  <label for = "jupiter"> Jupiter </label>
+  <br>
+  <label for ="query"> Which of the planets mentioned below are considered as out planets in our solar system </label>
+    <br>
+  <input type="checkbox" id="option-A" name="select"value="option-A">
+
+  <label for="option-A">Venus<label>
+      <input type="checkbox" id="option-b" name="select"value="option-b">
+  <label for="option-b"> Jupiter<label>
+    <input type="checkbox" id="option-C" name="select" value="option-c">
+    <label for ="option-c">Uranus</label>
+    <br>
+    <label for ="comments">Comments, if any</label>
+    <br>
+    <textarea id="comments" placeholder="enter" > </textarea>
+<br>
+    <button id="submit">Submit</button>
+   
+  </form>
+    
+    </body>
+    </html>
