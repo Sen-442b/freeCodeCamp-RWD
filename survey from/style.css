@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+body{
+  font-family: "Space Grotesk" , "Monospace" ;
+  line-height: 1.5;
+  color: white;
+  background-color:black;
+  margin: auto;
+ width:500px;
+
+  
+}
+
+form{
+  background-color: rgb(255,40,0,0.7);
+  border-radius: 7px;
+    padding: 1rem;
+  
+}
+
+input, select, textarea{
+  margin:1rem;
+  padding:10px;
+  border-radius:4px;
+   
+}
+button{
+  padding: 10px;
+  font-family:inherit;
+  
+}
+
+
+div{
+
+  
+
+  
+}
