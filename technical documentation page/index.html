@@ -1,1 +1,165 @@
+<!Doctype html> 
+<html lang="en">
+   <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A description of the page and its contents"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title> Planets Survey Form</title>
+    </head>
+  <!-- 
 
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<body>
+    <nav id="navbar">
+      <header>
+        <h1><span>React </span> Hooks</h1>
+      </header>
+      <ul class="u-list">
+        <li><a href="#Introducing_Hooks" class="nav-link"> Introducing Hooks</a></li>
+         <li><a href="#React_Features_at_Glance" class="nav-link">React Features at Glance </a></li>
+         <li><a href="#The_Use_State_Hook" class="nav-link">The Use State Hook </a></li>
+        <l1><a href="#Using_the_Effect_Hook" class="nav-link">Using the Effect Hook </a> </li>
+        <li><a href="#Rules_of_Hooks" class="nav-link">Rules of Hooks</a></li>
+        
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introducing_Hooks">
+        <header><h2>Introducing Hooks</h2></header> 
+        <article>
+        <h3>Example</h3>
+          <code>
+            import React, { useState } from 'react'; <br>
+  
+  function Example() { <br>
+    // Declare a new state variable, which we'll call &quot;count&quot; <br>
+    const [count, setCount] = useState(0); <br>
+  
+    return (<br>
+      &lt;div&gt; <br>
+        &lt;p&gt;You clicked {count} times&lt;/p&gt; <br>
+        &lt;button onClick={() =&gt; setCount(count + 1)}&gt;<br>
+          Click me<br>
+        &lt;/button&gt;<br>
+      &lt;/div&gt;<br>
+    );
+  }
+          </code>
+      
+            <p>With the introduction of Hooks, we can create stateful components without using classes. We can use functions to create stateful components. Since we’re defining state inside the function, we refer to these components as <strong>“Stateful Function Components.”</strong>.</p>
+        </article>
+      </section>
+      
+      
+      
+       <section class="main-section" id="React_Features_at_Glance">
+         <header><h2>React Features at Glance</h2></header> 
+         <article>
+         <ul>
+           <li>
+             <h3>JSX</h3>
+             <p>JSX stands for JavaScript XML. It is a JavaScript syntax extension. Its an XML or HTML like syntax used by ReactJS. This syntax is processed into JavaScript calls of React Framework. It extends the ES6 so that HTML like text can co-exist with JavaScript react code. It is not necessary to use JSX, but it is recommended to use in ReactJS.</p>
+           </li>
+           <li>
+              <h3>Components</h3>
+             <p>ReactJS is all about components. ReactJS application is made up of multiple components, and each component has its own logic and controls. These components can be reusable which help you to maintain the code when working on larger scale projects.</p>
+           </li>
+           <li>
+             <h3>Virtual DOM</h3>
+             <p>A virtual DOM object is a representation of the original DOM object. It works like a one-way data binding. Whenever any modifications happen in the web application, the entire UI is re-rendered in virtual DOM representation. Then it checks the difference between the previous DOM representation and new DOM. Once it has done, the real DOM will update only the things that have actually changed. This makes the application faster, and there is no wastage of memory.</p>
+           </li>
+           <li>
+            <h3>One-way Data Binding</h3>
+             <p>ReactJS is designed in such a manner that follows unidirectional data flow or one-way data binding. The benefits of one-way data binding give you better control throughout the application. If the data flow is in another direction, then it requires additional features. It is because components are supposed to be immutable and the data within them cannot be changed. Flux is a pattern that helps to keep your data unidirectional. This makes the application more flexible that leads to increase efficiency.</p>
+           </li>
+           <li>
+                <h3>Performance</h3>
+             <p>ReactJS is known to be a great performer. This feature makes it much better than other frameworks out there today. The reason behind this is that it manages a virtual DOM. The DOM is a cross-platform and programming API which deals with HTML, XML or XHTML. The DOM exists entirely in memory. Due to this, when we create a component, we did not write directly to the DOM. Instead, we are writing virtual components that will turn into the DOM leading to smoother and faster performance.</p>
+           </li>
+           </article>
+        </section>
+         
+         
+         
+         
+       <section class="main-section" id="The_Use_State_Hook">
+         <header><h2>The Use State Hook </h2> </header> 
+         <article>
+         <p>The useState() is a Hook that allows you to have state variables in functional components. React has two types of components, one is class components which are ES6 classes that extend from React and the other is functional components. Class components a Component and can have state and lifecycle methods: class Message extends React. The useState hook is a special function that takes the initial state as an argument and returns an array of two entries. </p>
+         <code>const [state, setState] = useState(initial state)</code>
+         </article>
+      </section>
+     
+       <section class="main-section" id="Using_the_Effect_Hook">
+         <header>
+           <h2>Using the Effect Hook</h2>
+         </header>
+         <article>
+         <p>With useEffect, you invoke side effects from within functional components, which is an important concept to understand in the React Hooks era. Working with the side effects invoked by the useEffect Hook may seem cumbersome at first, but you’ll eventually learn everything makes a lot of sense.</p>
+         <code>useEffect( <br>
+      () => { <br> 
+          // execute side effect <br>
+      }, <br>
+      // optional dependency array <br>
+      [ <br>
+          // 0 or more entries <br>
+      ]  <br>
+  )</code>
+           </article>
+       </section>
+      
+       <section class="main-section" id="Rules_of_Hooks">
+         <header>
+           <h2> Rules of Hooks </h2>
+         
+         </header>
+         <article>
+            <p><i>Hooks are JavaScript functions, but you need to follow two rules when using them. We provide a linter plugin to enforce these rules automatically:
+  
+            </i> </p>
+           <h3>Only Call Hooks at the Top Level</h3>
+           <p><strong>Don’t call Hooks inside loops, conditions, or nested functions.</strong> Instead, always use Hooks at the top level of your React function, before any early returns. By following this rule, you ensure that Hooks are called in the same order each time a component renders. That’s what allows React to correctly preserve the state of Hooks between multiple useState and useEffect calls.</p>
+           <h3>Eslint Plugin </h3>
+           <p>We released an ESLint plugin called <code>eslint-plugin-react-hooks</code> that enforces these two rules. You can add this plugin to your project if you’d like to try it:</p>
+           <p>This plugin is included by default in Create React App. </p>
+         </article>
+         <code>npm install eslint-plugin-react-hooks --save-dev</code>
+         <code>
+           // Your ESLint configuration <br>
+  { <br>
+    "plugins": [  <br>
+      // ...  <br>
+      "react-hooks"  <br>
+    ],  <br>
+    "rules": { <br>
+      // ...  <br>
+      "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks  <br> 
+      "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies  <br>
+    } <br>
+  }</code>
+         
+       </section>
+    </main>
+  </body>
+  
+  
+  </html>
+  
+  
+  <!-- Things to keep in mind
+  
+  1)header tags are used to display the introductory content of any navigation linked specifically 
+   
+  
+  -->
